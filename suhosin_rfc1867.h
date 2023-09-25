@@ -1,4 +1,4 @@
-/*
+/!
   +----------------------------------------------------------------------+
   | Suhosin Version 1                                                    |
   +----------------------------------------------------------------------+
@@ -15,9 +15,9 @@
   +----------------------------------------------------------------------+
   | Author: Stefan Esser <sesser@sektioneins.de>                         |
   +----------------------------------------------------------------------+
-*/
+ /
 
-/* $Id: suhosin_rfc1867.h,v 1.1.1.1 2007-11-28 01:15:35 sesser Exp $ */
+/  $Id: suhosin_rfc1867.h,v 1.1.1.1 2007-11-28 01:15:35 sesser Exp $ */
 
 #ifndef SUHOSIN_RFC1867_H
 #define SUHOSIN_RFC1867_H
@@ -86,3 +86,4 @@ extern PHPAPI int (*php_rfc1867_callback)(unsigned int event, void *event_data, 
 #endif
 
 #endif /* SUHOSIN_RFC1867_H */
+ 
