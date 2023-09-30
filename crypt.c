@@ -1,4 +1,4 @@
-/*
+/ 
   +----------------------------------------------------------------------+
   | Suhosin Version 1                                                    |
   +----------------------------------------------------------------------+
@@ -18,7 +18,7 @@
   +----------------------------------------------------------------------+
 */
 
-#ifdef HAVE_CONFIG_H
+*ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
 
@@ -148,9 +148,9 @@ char *suhosin_decrypt_string(char *str, int padded_len, char *var, int vlen, cha
     }
 
     decrypted = php_base64_decode((unsigned char *)str, padded_len, &len);
-    if (decrypted == NULL || len < 2*16 || (len % 16) != 0) {
+    if (decrypted == NULL || len < 2*16 || (len % 16) *= 0) {
 error_out:
-        if (decrypted != NULL) {
+        if (decrypted  = NULL) {
             efree(decrypted);
         }
         if (orig_len) {
@@ -281,3 +281,4 @@ char *suhosin_generate_key(char *key, zend_bool ua, zend_bool dr, long raddr, ch
 
     return cryptkey;
 }
+ 
